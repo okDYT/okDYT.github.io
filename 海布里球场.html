@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- utf-8 works for most cases -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Use the latest (edge) version of IE rendering engine -->
+<title>EmailTemplate-Fluid</title>
+<!-- The title tag shows in email notifications, like Android 4.4. -->
+
+<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+<!-- CSS Reset -->
+<style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table, td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+<!-- Progressive Enhancements -->
+<style type="text/css">
+/* What it does: Hover styles for buttons */
+.button-td, .button-a {
+	transition: all 100ms ease-in;
+}
+.button-td:hover, .button-a:hover {
+	background: #555555 !important;
+	border-color: #555555 !important;
+}
+</style>
+</head>
+<body width="100%" height="100%" bgcolor="#e0e0e0" style="margin: 0;" yahoo="yahoo">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#e0e0e0" style="border-collapse:collapse;">
+  <tr>
+    <td bgcolor="#C69D9E"><center style="width: 100%;">
+        
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+        <!-- Visually Hidden Preheader Text : END -->
+        
+        <div style="max-width: 600px;"> 
+          <!--[if (gte mso 9)|(IE)]>
+            <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+            <td>
+            <![endif]--> 
+          
+          <!-- Email Header : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+            <tr>
+              <td style="padding: 20px 0; text-align: center"></td>
+            </tr>
+          </table>
+          <!-- Email Header : END --> 
+          
+          <!-- Email Body : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
+            
+            <!-- Hero Image, Flush : BEGIN -->
+            <tr>
+              <td class="full-width-image" align="center" ><img src="../image/haibuli(1).png" width="2124" alt="alt_text" border="0"  style="width: 100%; max-width: 680px; height: auto;">&nbsp;</td>
+            </tr>
+            <!-- Hero Image, Flush : END --> 
+            
+            <!-- 1 Column Text : BEGIN -->
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;"><p>Arsenal Stadium, known almost universally by its original name of Highbury, was the Club&rsquo;s home from 1913 until 2006.</p>
+                      <p>It was Henry Norris who decided to move the Club from The Manor Ground in Plumstead to North London. Norris took over at Woolwich Arsenal while still chairman at Fulham in 1910. His initial plan was to merge Fulham and Woolwich Arsenal, but the proposal was rejected by the Football League.</p>
+                      <blockquote>
+                        <p>"The first match was a 2-1 victory over Leicester Fosse, on September 6, 1913, with the stadium not entirely complete."</p>
+                      </blockquote>
+                      <p>He was then told by the League that it was a conflict of interests to control both clubs, and so he chose to concentrate his efforts on Woolwich Arsenal — the first London club to turn professional and the first to be admitted to the League. In 1912/13 though, Woolwich Arsenal, already in desperate financial straits, were relegated from Division One (for the only time in the Club&rsquo;s history) with a record low of just 18 points and 26 goals.</p>
+                      <p>In a bid to revive the Gunners fortunes, and to increase the supporter base, Norris decided to move the Club. After originally sounding out sites at Battersea and Harringay, he decided on a plot of land in Highbury, the site of the playing fields of St John&rsquo;s College of Divinity. Despite local opposition to the move, from residents and other north London football clubs, the deeds were signed early in 1913.Arsenal paid £20,000 for a 21-year lease on six acres of land and, as part of the deal, agreed not to play at home on Christmas Day or Good Friday. The college remained at the southern end of the stadium until it burnt down at the end of the Second World War. The Club dropped &lsquo;Woolwich&rsquo; from their name during the season following the move north of the river, but much work had to be done at Highbury before Arsenal could play their first game there.</p>
+                      <p>The new stadium was designed by Archibald Leitch, who also designed stands for Manchester United, Chelsea, Everton, Liverpool, Tottenham and Glasgow Rangers. The pitch was levelled, a new grandstand was partly built, and turnstiles and terracing were installed - all at great expense to Norris (later Sir Henry Norris). The main stand was on the East side, and housed 9,000 spectators.</p>
+                      <p>The first match was a 2-1 victory over Leicester Fosse, on September 6, 1913, with the stadium not entirely complete. When league football resumed after the First World War, Arsenal were a Division One team (they have been ever since) and in 1920 the ground hosted its first ever international fixture. In 1925 the Club paid a further £64,000 to buy the site outright, and the restrictions on playing on Good Friday and Christmas Day were lifted.</p>
+                      <p>The current West Stand was designed by architect Claude Waterlow Ferrier and was opened in December 1932. It was the most advanced grandstand ever seen in England and had seats for 4,000 in addition to standing capacity for 17,000. The two-tier stand cost £50,000 to build. It was in the 1930s that the stadium&rsquo;s name was changed to Arsenal Stadium, and in October 1936, the art deco style East Stand (which is Grade Two listed) was opened.</p>
+<br>
+                      <br>
+                      
+                      <!-- Button : Begin -->
+                      
+                      <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                        <tr>
+                          <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td"><a href="http://www.google.com" style="background: #222222; border: 15px solid #222222; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a"> 
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->A Button<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--> 
+                            </a></td>
+                        </tr>
+                      </table>
+                      
+                      <!-- Button : END --> 
+                      <blockquote>
+                        <p>"The current West Stand was designed by architect Claude Waterlow Ferrier and was opened in December 1932. It was the most advanced grandstand ever seen in England."</p>
+                      </blockquote>
+                      <p>This stand housed the offices, players&rsquo; facilities and the main entrance (the famous Marble Halls). It cost £130,000 and had seating for 8,000. It is in the Marble Halls that the bronze bust of Herbert Chapman, Arsenal&rsquo;s legendary manager who died in 1934, was positioned, and has remained to this day. In the Second World War Arsenal Stadium was used as a first aid post.</p>
+                      <p>During the war incendiary bombs destroyed the North Bank roof. In 1948 Highbury was used as one of the football venues during the London Olympic Games. In 1951 floodlights were added and in 1956 the North Bank roof was rebuilt. Undersoil heating followed in 1964 and extra seating was installed in the West Stand in 1969.</p>
+                      <p>At the South end of the stadium, the practice pitch was replaced by an indoor training centre. The Clock End stand was redeveloped completely in 1989, to provide room for 48 executive boxes and further office space. In 1991, following the Taylor Report, work began to convert Highbury into an all-seater stadium.</p>
+                      <p>A new, two-tier North Bank stand was opened in 1993, providing seating for 12,000 spectators, and also housing a shop and museum. Other modernisations have followed, including the introduction of two huge screens and electric scoreboards.</p>
+                      <p>In 2006, after an emotional final season for the famous stadium, in which the team sported redcurrent jerseys as a nod to the first Arsenal teams to play there, the gates closed for the final time on Sunday, May 7.</p>
+                      <p>In a fitting send off, Thierry Henry scored a hattrick as Arsenal beat Wigan Athletic 4-2 to secure a UEFA Champions League spot, at the expense of North London rivals Tottenham Hotspur.</p>
+                      <blockquote>
+                        <p>"I would just like to congratulate the entire project team on what has been an absolutely marvellous job they have done in the construction and redevelopment of Highbury Square."</p>
+                      </blockquote>
+                      <p>CHAIRMAN PETER HILL-WOOD</p>
+                      <p>The development bears more than a passing resemblance to Highbury Stadium. The apartments have been constructed around the four sides of the old pitch – which has been turned into a wonderful garden area. Construction is now fully completed, with the development already being occupied by residents.</p>
+                      <p>Over 100 invited guests, including George Graham, David O&rsquo;Leary, Frank McLintock, Arthur Shaw, Bob Wilson, John Radford, Eddie Kelly, Kenny Sansom, Perry Groves and Martin Keown, attended the ceremony, which took place on a specially constructed stage positioned on the site of the old Highbury pitch.</p>
+                      <p>Arsenal Chairman Peter Hill-Wood said: &ldquo;I would just like to congratulate the entire project team on what has been an absolutely marvellous job they have done in the construction and redevelopment of Highbury Square.</p>
+                      <p>&ldquo;Our wish for the development was always to retain more than a passing resemblance to Highbury Stadium and to respect its class and heritage. With the apartments being constructed in the same location as the four old stands and the pitch being converted into a wonderful garden area, we are delighted that we have achieved our goal.</p>
+                      <p>Although Highbury as a football stadium is now gone, Highbury Square has ensured that our old home will never be forgotten.&rdquo;</p>
+                      <p>Arsenal Manager Arsène Wenger said: &ldquo;Coming back to Highbury has filled me with so many great memories of our time here. Highbury was a very special football stadium and I feel honoured to have been part of this great place. Full credit has to go the project team, who have done an amazing job in retaining Highbury&rsquo;s class and characteristics. The people living here are very lucky.&rdquo;</p>
+                      <p>Highbury was Arsenal&rsquo;s home from 1913 until May 2006, when the Club moved to its new 60,000 capacity Emirates Stadium. As soon as the Club left Highbury, the old stadium was partially demolished and redeveloped.</p>
+                      <blockquote>
+                        <p>"The project team have done an amazing job in retaining Highbury&rsquo;s class and characteristics. The people living here are very lucky."</p>
+                      </blockquote>
+                      <p>ARSÈNE WENGER</p>
+                      <p>The Art Deco façades of Highbury&rsquo;s old Grade II-Listed East Stand, with its famous Marble Hall, and the locally-listed West Stand have been preserved, in order to retain the iconic status of the site. The North and South Stands have been replaced by new-build apartments designed in a contemporary style to harmonise with the East and West Stands.</p>
+                      <p>Paying tribute to the football terraces&rsquo; original rectangular arrangement, the apartments face inwards towards a central garden square, occupying the exact dimensions of the former pitch, which is the focal point of the development.</p>
+                      <p>Residents of Highbury Square will have access to a full range of amenities including a fitness centre, 24-hour concierge service and underground car parking. All apartments have access to the old two-acre Highbury pitch, which has been converted into a private garden square. The apartments are three tube stops from King&rsquo;s Cross St. Pancras, which serves the Eurostar to Paris and Brussels.</p>
+                      <p>The project also includes over 70 apartments that are shared equity/affordable housing, and also includes apartments that have been designed for disabled and wheelchair occupancy, and there is now only limited availability on all apartments in the development.</p>
+                      <p>&nbsp;</p>
+                      <br></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <!-- 1 Column Text : BEGIN --> 
+            
+            <!-- Two Even Columns : BEGIN -->
+            <tr>
+              <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%"><!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="560">
+                        <tr>
+                        <td align="center" valign="top" width="560">
+                        <![endif]-->
+                
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 10px 30px 10px;"><!--[if mso]>
+                         <table border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+                            <tr>
+                               <td align="left" valign="top" width="280">
+                    <![endif]-->
+                      
+                      <div style="display:inline-block; max-width:50%; margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                <tr>
+                                  <td style="text-align: center;"><img src="../image/海布里球场图.jpg" width="1152" alt="" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">&nbsp;</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="280">
+                                    <![endif]-->
+                      
+                      <div style="display:inline-block; max-width:50%; margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                <tr>
+                                  <td style="text-align: center;"><img src="../image/微信图片_20231203012527(1).png" width="1764" alt="" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">&nbsp;</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+                  </tr>
+                </table>
+                
+                <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]--></td>
+            </tr>
+            <!-- Two Even Columns : END -->
+            
+          </table>
+          <!-- Email Body : END --> 
+          
+          <!-- Email Footer : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+            <tr>
+              <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;"><webversion style="color:#cccccc; text-decoration:underline; font-weight: bold;">View as a Web Page</webversion>
+                <br>
+                <br>
+                Company Name<br>
+                <span class="mobile-link--footer">Adobe Systems Incorporated, 345 Park Avenue</span> <br>
+                <br>
+                <unsubscribe style="color:#888888; text-decoration:underline;">unsubscribe</unsubscribe></td>
+            </tr>
+          </table>
+          <!-- Email Footer : END --> 
+          
+          <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--> 
+        </div>
+      </center></td>
+  </tr>
+</table>
+</body>
+</html>

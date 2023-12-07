@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- utf-8 works for most cases -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Use the latest (edge) version of IE rendering engine -->
+<title>EmailTemplate-Fluid</title>
+<!-- The title tag shows in email notifications, like Android 4.4. -->
+
+<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+<!-- CSS Reset -->
+<style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table, td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+<!-- Progressive Enhancements -->
+<style type="text/css">
+/* What it does: Hover styles for buttons */
+.button-td, .button-a {
+	transition: all 100ms ease-in;
+}
+.button-td:hover, .button-a:hover {
+	background: #555555 !important;
+	border-color: #555555 !important;
+}
+body {
+    background-image: url(../image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231202202530.jpg);
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body bgcolor="#e0e0e0" style="margin: 0;" onLoad="MM_preloadImages('../image/微信图片_20231202204044.png','../image/温格旧照.png')" width="100%" height="100%" yahoo="yahoo">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#e0e0e0" style="border-collapse:collapse;">
+  <tr>
+    <td bgcolor="#8C0404"><center style="width: 100%;">
+        
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+        <!-- Visually Hidden Preheader Text : END -->
+        
+        <div style="max-width: 600px;"> 
+          <!--[if (gte mso 9)|(IE)]>
+            <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+            <td>
+            <![endif]--> 
+          
+          <!-- Email Header : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+            <tr>
+              <td style="padding: 20px 0; text-align: center"><img src="../image/球场外部.jpg" width="200" height="50" alt="alt_text" border="0"></td>
+            </tr>
+          </table>
+          <!-- Email Header : END --> 
+          
+          <!-- Email Body : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
+            
+            <!-- Hero Image, Flush : BEGIN -->
+            <tr>
+              <td class="full-width-image" align="center" ><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','../image/温格旧照.png',1)"><img src="../image/伟大的温格.jpg" alt="" width="600" height="300" id="Image4"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','../image/微信图片_20231202204044.png',1)"widyh=600,height=300,></a></td>
+            </tr>
+            <!-- Hero Image, Flush : END --> 
+            
+            <!-- 1 Column Text : BEGIN -->
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;"><div>
+                      <p>1996年十月，阿尔塞纳·温格走进了海布里球场，未来，他将永远地改变这支球队。</p>
+                    </div>
+                      <div>
+                        <p>自从乔治·格拉汉姆离开后，斯图尔特·休斯顿和布鲁斯·里奥奇曾先后短暂地执起教鞭，但阿森纳需要一个长期的教练。很快，一个名不见经传的法国人被选中，未来，他将永远地改变这支球队。</p>
+                        <p>1996年十月，阿尔塞纳·温格走进了海布里球场，成为了阿森纳史上第一位非英籍主教练。此前，他已经在摩纳哥取得过令人瞩目的成就，又在日本球队名古屋鲸八执教了一段时间。</p>
+                        <p>在那个赛季中，阿森纳在联赛中排名第三，但新任主教练直到他执掌球队的第一个完整赛季才开始大展拳脚。在1997/98赛季的某一阶段，枪手落后于领头羊曼联11分，但联赛下半程强势的精彩表现让阿森纳提前两轮拿到联赛冠军。两周之内，枪手又赢得了足总杯冠军，阿森纳在温格执教的第一个完整的赛季中就赢得了双冠。</p>
+                        <p>温格不仅在重塑球场上的阿森纳，在赛场外，他也开始改变球员们的生活方式。温格为球员们制定了最先进的训练制度和膳食体系。在球队建设方面，法国人可谓无微不至，当时球队已经有了引以为豪的球星大卫·希曼、托尼·亚当斯和丹尼斯·博格坎普，温格又引入了帕特里克·维埃拉、埃曼纽尔·佩蒂特和马克·奥维马斯一众强援。</p>
+                        <p>另一位在温格麾下如鱼得水的海布里球星是伊恩·赖特。温格上任时，赖特距离克利夫·巴斯汀的队史进球纪录已经越来越近。1997年9月13日，赖特终于在对阵博尔顿的比赛中神奇地打入了在阿森纳的第179个进球。但八年以后，蒂埃里·亨利让赖特的纪录黯然失色。签下亨利或许是温格最成功的一次引援。</p>
+                      </div>
+                      <br>
+                      <br>
+                      
+                      <!-- Button : Begin -->
+                      
+                      <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                        <tr>
+                          <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td"><a href="../image/、温格2.mp4" style="background: #222222; border: 15px solid #222222; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a"> 
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->A Button<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--> 
+                            </a></td>
+                        </tr>
+                      </table>
+                      
+                      <!-- Button : END --> 
+                      <br>
+                      <p>亨利在1999年与阿森纳签约，此前的一个赛季，温格的球队刚刚以一分之差落后曼联，错失了卫冕英超冠军的良机。最初，亨利加入球队后经历了八场进球荒，人们质疑他能否适应英超的激烈混战，但最终这位前尤文球星在那个赛季交出了26粒进球的精彩答卷。尽管2000年欧联杯和2001年足总杯的失利使得亨利在加盟阿森纳后依然颗粒无收，但这一局面并没有持续太久。</p>
+                      <p>在2001/02赛季，温格的球队以不可思议的双冠告终，在联赛中更是领先了第二名利物浦多达七分。在足总杯决赛2-0完胜切尔西仅仅几天后，阿森纳在老特拉福德击败曼联，终结了联赛争冠悬念。</p>
+                      <p>在2002/03赛季，枪手再次捧起了足总杯冠军，但却又一次与卫冕联赛冠军失之交臂。不过在接下来的赛季中，他们以赛季不败的骄人战绩夺得联赛冠军，弥补了上赛季的遗憾，并超越了诺丁汉森林保持的不败纪录。在49场比赛中，阿森纳赢下了26场，13场打平，无一失利——那支阿森纳是真正的&ldquo;不败之师&rdquo;。</p>
+                      <p>温格已经征服了英格兰，但他在欧洲赛场上仍未有建树。2004年，在欧冠四分之一决赛面对切尔西时，阿森纳曾与这项欧洲最具含金量的锦标无限接近，却最终告负。2006年5月，一路闯进欧冠决赛的阿森纳饮恨巴黎。在这之间，枪手于2005年在卡迪夫击败曼联，又夺得了一个足总杯冠军。</p>
+                      <p>阿森纳很快成为了欧洲最负盛名的球队之一。2004年2月，在海布里球场不远处，枪手最先进的新主场在阿什伯顿开工建设。全新的阿联酋航空足球场在2006年夏天正式投入使用——阿森纳有过光辉的历史，如今我们又面向未来迈出了大胆的一步。</p></td>
+                  </tr>
+                </table></td>
+            </tr>
+            <!-- 1 Column Text : BEGIN --> 
+            
+            <!-- Two Even Columns : BEGIN -->
+            <tr>
+              <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%"><!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="560">
+                        <tr>
+                        <td align="center" valign="top" width="560">
+                        <![endif]-->
+                
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 10px 30px 10px;"><!--[if mso]>
+                         <table border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+                            <tr>
+                               <td align="left" valign="top" width="280">
+                    <![endif]-->
+                      
+                      <div style="display:inline-block; max-width:50%; margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                <tr>
+                                  <td style="text-align: center;"><img src="../image/君临天下.jpg" width="200"，height=“200”， alt="" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center"><a href="../image/温格时期阿森纳.mp4">click</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="280">
+                                    <![endif]-->
+                      
+                      <div style="display:inline-block; max-width:50%; margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                <tr>
+                                  <td style="text-align: center;"><img src="../image/温格旧照.png" width="1438"height=814 alt="" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center"><a href="../image/温格.mp4">click</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+                  </tr>
+                </table>
+                
+                <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]--></td>
+            </tr>
+            <!-- Two Even Columns : END -->
+            
+          </table>
+          <!-- Email Body : END --> 
+          
+          <!-- Email Footer : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+            <tr>
+              <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;"><webversion style="color:#cccccc; text-decoration:underline; font-weight: bold;"><iframe src="//player.bilibili.com/player.html?aid=70636218&bvid=BV1GE411f7CB&cid=122379408&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></webversion>
+                <br>
+                <br>
+                <unsubscribe style="color:#888888; text-decoration:underline;"></unsubscribe></td>
+            </tr>
+          </table>
+          <!-- Email Footer : END --> 
+          
+          <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--> 
+        </div>
+      </center></td>
+  </tr>
+</table>
+</body>
+</html>
